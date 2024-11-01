@@ -1,5 +1,6 @@
 import React from 'react';
 import './WeatherDisplay.css';
+import { WeatherIcon } from '..';
 
 interface WeatherDisplayProps {
   weatherData: WeatherData | null;
@@ -26,11 +27,18 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weatherData }) => {
   }
 
   return (
-    <div className="weather-display">
+<div className="weather-display">
       <h2 className="city-name">{weatherData.name}</h2>
-      <p className="weather-info">Temperature: {weatherData.main.temp}°C</p>
-      <p className="weather-info">Humidity: {weatherData.main.humidity}%</p>
-      <p className="weather-info">Wind Speed: {weatherData.wind.speed} m/s</p>
+      <WeatherIcon icon={weatherData.weather[0].icon} description={weatherData.weather[0].description} />
+      <p className="weather-info">
+        Temperature: <span>{weatherData.main.temp}</span>°C
+      </p>
+      <p className="weather-info">
+        Humidity: <span>{weatherData.main.humidity}</span>%
+      </p>
+      <p className="weather-info">
+        Wind Speed: <span>{weatherData.wind.speed}</span> m/s
+      </p>
     </div>
   );
 };

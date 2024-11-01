@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SearchBar, WeatherDisplay, WeatherIcon, ErrorMessage } from '..';
+import { SearchBar, WeatherDisplay, ErrorMessage } from '..';
 import './WeatherDashboard.css';
 
 interface WeatherData {
@@ -53,10 +53,6 @@ const WeatherDashboard: React.FC = () => {
       {weatherData && (
         <div className="weather-container">
           <WeatherDisplay weatherData={weatherData} />
-          <WeatherIcon
-            icon={weatherData.weather[0].icon}
-            description={weatherData.weather[0].description}
-          />
         </div>
       )} {/* Display weather data if available */}
     </div>

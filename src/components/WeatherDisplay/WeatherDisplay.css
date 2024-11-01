@@ -1,21 +1,33 @@
 .weather-display {
-    text-align: left;
-    margin: 0 auto;
-    max-width: 400px;
-    background-color: #f0f8ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.weather-info {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.weather-info span {
+  font-weight: bold;
+  color: #0288d1;
+}
+
+.city-name {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .weather-display {
+    width: 90%;
+    padding: 15px;
   }
-  
-  .city-name {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .weather-info {
-    font-size: 1.1rem;
-    color: #555;
-    margin: 5px 0;
-  }
+}

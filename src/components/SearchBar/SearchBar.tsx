@@ -14,16 +14,15 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSearch} aria-label="Search form">
-      <input
+    <form onSubmit={handleSearch} aria-label="Search form" className="search-bar">
+     <input
         type="text"
         className="search-input"
         placeholder="Enter city name"
         value={city}
-        onChange={(e) => setCity(e.target.value)}
-        aria-label="City name input"
+        onChange={(e) => setCity(e.target.value)} // Update the city state when input changes
       />
-      <button type="submit" className="search-button" aria-label="Search city">Search</button>
+      <button className="search-button" onClick={handleSearch}>Search</button>
     </form>
   );
 };

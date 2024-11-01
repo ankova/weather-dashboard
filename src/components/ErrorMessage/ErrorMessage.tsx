@@ -6,7 +6,8 @@ interface ErrorMessageProps {
 }
 
 const ErrorMessage: React.FC<ErrorMessageProps> = ({ message }) => {
-  return <p className="error-message">Error: {message}</p>;
+  return <p className="error-message">Error: {message}</p>; // Display the error message
 };
+
 
 export default ErrorMessage;
