@@ -1,0 +1,30 @@
+.weather-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    .search-bar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  
+    .weather-display {
+      max-width: 90%;
+    }
+  }
+  

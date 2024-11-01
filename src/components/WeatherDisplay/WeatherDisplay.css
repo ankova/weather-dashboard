@@ -1,0 +1,21 @@
+.weather-display {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .city-name {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .weather-info {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+  }
